@@ -1,0 +1,247 @@
+/* ============================================================================================= */
+/* ============================================================================================= */
+/* =============================================================================================  /
+
+
+        TITLE _____________ layout.css
+        AUTHORS ___________ Blake Eddins
+
+
+/  ============================================================================================= */
+/* ============================================================================================= */
+/* ============================================================================================= */
+
+/* ========== STRUCTURE  ========== */
+
+#subBar li {
+    margin:0px;
+}
+
+.frame {
+    float:left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width:100%;
+    padding:1%;
+    margin: 0px;
+}
+
+.mainGroup {
+    padding: .75%;
+    margin-bottom: 1%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.subGroupTitle {
+	background-color:#EEEEEE;
+    border-radius: 0;
+	color: #CCC;
+    text-transform:uppercase;
+    font-weight: bold;
+    padding: 0.5em;
+    position: relative;
+    text-shadow: 1px 1px 0 #fafafa;
+	font-size:1.09em;
+	margin: 0 -5px;
+	border-bottom: none;
+}
+
+.optionBox{
+    padding-left: 0px;
+    margin: 1.5em .5em 2.5em;
+}
+
+.optionBoxTitle{
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+    text-align:left;
+    padding:0em 0em .5em;
+}
+
+.optionBoxGroup{
+    border-left:1px solid #EDEDED;
+    padding:.5em 0em .5em 1.5em;
+    margin-left:0px;
+    min-height: 20px;
+}
+
+.optionBoxGroup.need_value{
+    background: #F9D2D6;
+}
+
+.optionBoxHint {
+    display: none;
+    margin: 10px 0px 0px;
+    background-color: #FEFFE1;
+    border: 1px solid #D4D81C;
+    color: #A6A942;
+    padding: 10px;
+    border-radius: 4px;
+    width: 40%;
+}
+
+.optionBoxHintToggle,
+.optionBoxHintToggle:visited {
+    color: #A6A942;
+}
+
+/* ========== TABLE =========== */
+table.itemList tr:nth-child(even) {
+    background-color: #FCFCFC;
+}
+
+td, th {
+    border:none;
+    vertical-align: middle;
+}
+
+table.itemList tr:nth-child(even) td {
+    border-right:none;
+}
+
+/* ========== FORMS =========== */
+
+input, textarea {
+    font-size: 11px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* ========== BUTTONS  ========== */
+
+.save_button{
+    background-image: url("../../../../images/white/save.png");
+    background-position: 0.4em center;
+    background-repeat:no-repeat;
+    background-color: #5BB75B;
+    padding: 5px 10px 6px 25px;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(225, 225, 225, 0.25);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor: pointer;
+}
+
+.save_button:hover{
+    background-color: #55AA55;
+}
+
+.save_button[disabled='disabled'],
+.save_button[disabled='disabled']:hover {
+    background-color:#CCCCCC;
+}
+
+/* ========== RESPONSE HANDLING ============== */
+#app_response {
+    background: #B9DF90;
+    border: 1px solid #A0D468;
+    color: #3C763D;
+    padding: 15px 30px;
+    font-size: 1.09em;
+    text-transform: uppercase;
+    border-radius: 0px;
+    box-shadow: 0px 3px 10px #333;
+    margin:0px;
+}
+
+#app_response span {
+    color: #FFF;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+#app_response.warning {
+    background: #FCFF83;
+    border-color: #D4D81C;
+    color: #A6A942;
+}
+
+#app_response.exception {
+    background: #F2838F;
+    border-color: #ED5565;
+    color: #A94442;
+}
+
+/* ============ DASHBOARD VIEW ================= */
+.itemList td{
+    width:11%;
+}
+.manage_button_field {
+    width: 5% !important;
+}
+.summary_field{
+    width: 36% !important;
+}
+.type_field{
+    width: 15% !important;
+}
+.center_field{
+    text-align: center;
+}
+.today {
+    background: #fffbc0 !important;
+}
+
+/* ============ SERVICE =================== */
+.form_buttons {
+    text-align:right;
+    background: #FDFDFD;
+    margin: 0px;
+    padding: .5em;
+    border: 1px solid #FAFAFA;
+    border-radius: 4px;
+}
+
+input[type='text'],
+textarea {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 0px #eee;
+    vertical-align: middle;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+input.date-picker{
+    width:100px;
+}
+
+select {
+    font-size: 11px;
+    width: 25%;
+    min-width:125px;
+}
+
+.ui-datepicker-trigger{
+    border:none;
+    background:none;
+    vertical-align: middle;
+}
+.required:after{
+   content:"*"; 
+}
+/* =========== SERVICE TYPE FIELDS LOADER ================ */
+.hidden{
+    display: none;
+}
+
+.hidden_on_load{
+    display:none;
+}
+#service_type_fields .loading{
+    text-align: center;
+    margin: 50px;
+    color: #ccc;
+}
